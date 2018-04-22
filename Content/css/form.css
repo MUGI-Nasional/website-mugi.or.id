@@ -1,0 +1,190 @@
+﻿.field-wrap input[type=text], .field-wrap input[type=date], .field-wrap input[type=number]{
+    width: 100%;
+    border: 1px solid #d3d9e4;
+    border-radius: 0px !important;
+    font-size: 14px !important;
+    background-color: white;
+    background-image: none !important;
+    background-position: 5px 5px;
+    background-repeat: no-repeat;
+    padding: 3px 5px 5px 13px !important;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    margin-top: 8px;
+}
+
+    .field-wrap input[type=text]:focus, .field-wrap input[type=date]:focus, .field-wrap input[type=number]:focus {
+        width: 100%;
+    }
+
+
+.field-wrap ul {
+    list-style-type: none;
+    margin: 0px -5px 30px 0px !important;
+    padding: 0px !important;
+}
+
+    .field-wrap ul li {
+        float: left;
+        text-decoration: none !important;
+        padding: 40px 5px 5px 5px;
+    }
+
+
+
+.title-inputarea p {
+    line-height: 1;
+    padding-top: 5px;
+
+}
+
+
+textarea {
+    font-size: 16px !important;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 5px 10px;
+    background: none;
+    background-image: none;
+    border: 1px solid #a0b3b0;
+    color: #34394c;
+    border-radius: 0;
+    -webkit-transition: border-color .25s ease, box-shadow .25s ease;
+    transition: border-color .25s ease, box-shadow .25s ease;
+    border: 2px solid #a0b3b0;
+    resize: vertical;
+}
+
+    input:focus, textarea:focus {
+        outline: 0;
+        border-color: #d3d9e4;
+    }
+
+.field-wrap {
+    position: relative;
+    margin-bottom: 10px;
+    margin-top: -10px;
+}
+
+    .field-wrap textarea {
+        border: 1px solid #d3d9e4;
+        border-radius: 0px !important;
+        font-size: 14px !important;
+        background-color: white;
+        background-image: none !important;
+        background-position: 5px 5px;
+        background-repeat: no-repeat;
+        padding: 3px 5px 5px 13px !important;
+        margin-top: 8px;
+    }
+
+
+    .field-wrap a{
+        position:relative;
+        top:12px;
+    }
+
+
+.link-update ul {
+    list-style-type: none;
+}
+
+    .link-update ul li {
+        float: left;
+        padding: 10px 15px 10px 15px;
+        text-decoration: none;
+    }
+
+        .link-update ul li a:active {
+            text-decoration: none;
+            color: #373c51;
+        }
+
+        .link-update ul li a {
+            text-decoration: none;
+            color: #373c51;
+            font-size: 15px;
+        }
+
+        .link-update ul li:active {
+            background-color: #fff;
+        }
+ 
+
+
+/*----------------------------------------------------------- first row update--------------------------------*/
+
+.viewmodal {
+    width: 90%;
+}
+
+    .viewmodal h4 {
+        border: none !important;
+        margin: 0px !important;
+        padding-top: 0px !important;
+    }
+
+.groupform .save {
+    background-color: #337ab7 !important;
+    padding: 6px 30px 6px 30px !important;
+    color: #fff !important;
+    margin: -40px 0px 20px 12px !important;
+}
+
+.groupform .submit {
+    background-color: #337ab7 !important;
+    padding: 6px 30px 6px 30px !important;
+    color: #fff !important;
+    margin: -40px 0px 20px 12px !important;
+}
+
+.groupform .cancel {
+    padding: 6px 35px 6px 35px !important;
+    margin-left: 0px !important;
+    background-color: #e4e9e9 !important;
+    margin: -40px 0px 20px 0px !important;
+}
+
+.groupform-left .save {
+    background-color: #5ea40f !important;
+    padding: 6px 30px 6px 30px !important;
+    color: #fff !important;
+    margin-left: 0px !important;
+    margin-top: -30px !important;
+}
+
+.groupform-left .submit {
+    background-color: #337ab7 !important;
+    padding: 6px 33px 6px 33px !important;
+    color: #fff !important;
+    margin-left: 0px;
+    margin-top: -30px !important;
+}
+
+.groupform-left .cancel {
+    padding: 5px 35px 5px 35px !important;
+    margin-left: 0px !important;
+    background-color: #fbf9f4 !important;
+    margin-top: -30px !important;
+    border: 1px solid #337ab7;
+}
+
+.create-pass {
+    margin-left: 40px !important;
+}
+
+    .create-pass p {
+        padding-top: 5px !important;
+        font-size: 12px;
+    }
+
+
+label {
+    font-weight: 400 !important;
+}
+
+    label span {
+        margin-top: 2px !important;
+    }
+

@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI</title>
+    <link rel="stylesheet" href="/Content/css/loading.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="/Content/amcharts/export/export.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="/Content/css/responsive.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="/Content/css/bootstrap.min.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="/Content/css/office365icons.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="/Content/css/metisMenu.min.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="/Content/css/jquery-ui.min.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="/Content/css/form.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="/Content/css/gridstack.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="/Content/css/bootstrap-table.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="/Content/css/bootstrap-toggle.min.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="/Content/css/style.css" type="text/css" media="all" />
+    
+</head>
+<body class="index">
+    <!--Header-->
+    <section class="navbar">
+        <div class="top-navbar">
+            <div class="col-sm-2 col-md-2 col-lg-5">
+                <ul class="topmenu">
+                    <li class="app"><a href="#" class="collapse-menu" onclick="openMenu(this)"><i class="ms-icon-waffle"></i></a></li>
+                    <li class="hidden-desktop"><a href="#" onclick="openMobileNav(this)"><i class="ms-icon-menu"></i></a></li>
+                    <li class="brand"><a href="#">Sistem Informasi Kepegawaian </a></li>
+                </ul>
+            </div>
+            <div class="col-sm-10 col-md-10 col-lg-7">
+                <ul class="pull-right">
+                    <li class="listBell"><a class="bellicon" onclick="openInlineModal(this, '#myNotif')" href="#"><i class="ms-icon-bell"></i></a></li>
+                    <li><a class="settingicon" onclick="openInlineModal(this, '#mySetting')" href="#"><i class="ms-icon-gear"></i></a></li>
+                    <li><a class="questionicon" onclick="openInlineModal(this, '#myQuestion')" href="#"><i class="ms-icon-question"></i></a></li>
+                    <li class="profileBar"><a class="usericon" onclick="openInlineModal(this, '#myUser')" href="#"><span class="displayname">Nugroho R..</span><img src="data:image/gif;base64,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" /><span class="caret"></span> </a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!--End Header-->
+    <div class="container-fluid">
+        <div class="row main">
+            <!--Menu-->
+            <div class="col-sm-2 side-nav" id="sidemenu">
+                <div class="left-nav scroll-view" id="mySidenav">
+                    <div class="sidebar-nav">
+                        <ul class="metismenu exit" id="menu">
+                            <li class="hidden-mobile"><a href="#" class="collapse-menu app-arrow" onclick="openNav(this)"></a></li>
+                            <li><a ajax="true" ajax-target="#main" url-push="true" href="#!/Views/Home/Welcome.html"><span class="nav-text">Home</span></a></li>
+                            <li><a ajax="true" ajax-target="#main" url-push="true" href="#!/Views/About/About.html"><span class="nav-text">Tentang kami</span></a></li>
+                            <li><a ajax="true" ajax-target="#main" url-push="true" href="#!/Views/404/404.html"><span class="nav-text">Program kerja</span></a></li>
+                            <li><a ajax="true" ajax-target="#main" url-push="true" href="#!/Views/404/404.html"><span class="nav-text">Kerja sama</span></a></li>
+                            <li><a ajax="true" ajax-target="#main" url-push="true" href="#!/Views/404/404.html"><span class="nav-text">Media</span></a></li>
+                            <li><a ajax="true" ajax-target="#main" url-push="true" href="#!/Views/404/404.html"><span class="nav-text">Acara</span></a></li>
+                            <li><a ajax="true" ajax-target="#main" url-push="true" href="#!/Views/Contact/Contact.html"><span class="nav-text">Hubungi kami</span></a></li>
+                        </ul>
+                        <h4 class="side-logo">Microsoft User Group <b>Indonesia</b></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="main-page" id="main">
+
+            </div>
+        </div>
+    </div>
+    <script src="/Content/js/jquery.min.js"></script>
+    <script src="/Content/js/jquery-ui.min.js"></script>
+    <script src="/Content/js/jquery.ui.touch-punch.js"></script>
+    <script src="/Content/js/jquery.easing.min.js"></script>
+    <script src="/Content/js/metisMenu.min.js"></script>
+    <script src="/Content/js/main.js"></script>
+    <script src="/Content/amcharts/amcharts.js"></script>
+    <script src="/Content/amcharts/serial.js"></script>
+    <script src="/Content/amcharts/export/export.min.js"></script>
+    <script src="/Content/amcharts/themes/light.js"></script>
+    <script src="/Content/js/bootstrap.min.js"></script>
+    <script src="/Content/js/lodash.min.js"></script>
+    <script src="/Content/js/highlight.min.js"></script>
+    <script src="/Content/js/bootstrap-table.js"></script>
+    <script src="/Content/js/bootstrap-toggle.min.js"></script>
+    <script src="/Content/js/xamzo.wrapper.js"></script>
+    <script src="/Content/js/gridstack.js"></script>
+    <script src="/Content/js/gridstack.jQueryUI.js"></script>
+</body>
+</html>

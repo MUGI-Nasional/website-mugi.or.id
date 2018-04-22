@@ -1,0 +1,942 @@
+﻿.hidden-desktop {
+    display: none;
+}
+
+.hidden-mobile {
+    display: block;
+}
+
+.grid-stack > .grid-stack-item[data-gs-width='6'] {
+    width: 49% !important;
+}
+
+/*--------------------------------------------------------------------START 1600px-------------------*/
+@media screen and (max-width: 1600px) {
+    .inline-modal ul {
+        margin-left: 12px !important;
+    }
+
+    .col-name {
+        width: 843px !important;
+    }
+
+    .col-infobottom {
+        width: 417px !important;
+    }
+
+    .second-line {
+        width: 76% !important;
+    }
+
+    .menu-grid {
+        width: 93% !important;
+    }
+
+    .dashboard-search {
+        width: 340px !important;
+    }
+
+   
+}
+
+/*--------------------------------------------------------------------START 1366px-------------------*/
+
+
+@media screen and (max-width: 1366px) {
+    .first-row {
+        width: 90% !important;
+    }
+
+    .second-row {
+        width: 87.7% !important;
+        left: 0px !important;
+    }
+
+    .second-line {
+        width: 70% !important;
+    }
+
+    .menu-grid {
+        width: 100% !important;
+    }
+
+    .overlay-text-bottom2 {
+        left: 190px !important;
+    }
+
+    .dashboard-search {
+        width: 310px !important;
+    }
+
+    
+}
+
+
+
+
+/*--------------------------------------------------------------------START 1280px-------------------*/
+@media screen and (max-width: 1280px) {
+
+    .col-name {
+        width: 587px !important;
+    }
+
+    .col-infobottom {
+        width: 289px !important;
+    }
+
+    .basicinfo-left {
+        top: 75px !important;
+    }
+
+    .second-line {
+        width: 70% !important;
+    }
+
+    .col-infobottomEdu {
+        width: 363px !important;
+    }
+
+    .overlay-text-bottom2 {
+        left: 170px !important;
+    }
+
+    .dashboard-search {
+        width: 290px !important;
+    }
+
+  
+
+
+    .data-area {
+        width: 93% !important;
+    }
+
+    .change-view {
+        padding: 5px 20px 5px 20px !important;
+    }
+}
+/*--------------------------------------------------------------------START 1024px-------------------*/
+
+@media screen and (max-width: 1024px) {
+
+    .top-navbar ul.pull-right {
+        right: 0px !important;
+    }
+
+    .top-navbar {
+        width: 101% !important;
+    }
+
+    .container-bottom {
+        padding-left: 100px !important;
+    }
+
+    .col-lg-9 {
+        width: 200% !important;
+    }
+
+    .col-lg-3 {
+        display: none;
+    }
+
+    .centerElementForm {
+        margin: 0px auto;
+        width: 100% !important;
+    }
+
+    .first-row {
+        width: 100% !important;
+    }
+
+    .col-name {
+        width: 570px !important;
+    }
+
+    .second-row {
+        width: 96.8% !important;
+    }
+
+    .col-infobottom {
+        width: 280px !important;
+    }
+
+    .second-line {
+        width: 62% !important;
+    }
+
+    .main-update {
+        width: 97% !important;
+    }
+
+    .form-update {
+        width: 94% !important;
+    }
+
+    .coltitle-update {
+        width: 557px !important;
+    }
+
+    .basicinfo-right {
+        width: 95% !important;
+        top: 30px !important;
+    }
+
+    .basicinfo-left {
+        width: 100% !important;
+        top: 15px !important;
+    }
+
+    .first-row h4, .second-row h4 {
+        font-size: 16px !important;
+    }
+
+
+
+    .address-info, .skill-info, .works-info {
+        padding: 20px 10px 10px 10px !important;
+    }
+
+    .bottom-changephoto {
+        padding: 30px 10px 10px 10px !important;
+    }
+
+    .col-infobottomEdu {
+        width: 320px !important;
+    }
+
+    .grid-stack > .grid-stack-item[data-gs-width='3'] {
+        width: 33.3333333333% !important;
+    }
+
+    .grid-stack > .grid-stack-item[data-gs-x='3'] {
+        left: 33.3333333333% !important;
+    }
+
+    .grid-stack > .grid-stack-item[data-gs-min-width='3'] {
+        min-width: 33.3333333333% !important;
+    }
+
+    .grid-stack > .grid-stack-item[data-gs-max-width='3'] {
+        max-width: 33.3333333333% !important;
+    }
+
+    .grid-stack > .grid-stack-item[data-gs-width='6'] {
+        width: 65% !important;
+    }
+
+    .grid-stack > .grid-stack-item[data-gs-x='6'] {
+        left: 66.6666666667% !important;
+        margin-left: -15px !important;
+    }
+
+
+    .grid-stack > .grid-stack-item[data-gs-min-width='6'] {
+        min-width: 65% !important;
+    }
+
+    .grid-stack > .grid-stack-item[data-gs-max-width='6'] {
+        max-width: 65% !important;
+    }
+
+    .grid-stack > .grid-stack-item[data-gs-width='9'] {
+        width: 100% !important;
+    }
+
+    .grid-stack > .grid-stack-item[data-gs-x='9'] {
+        left: 100% !important;
+    }
+
+    .grid-stack > .grid-stack-item[data-gs-min-width='9'] {
+        min-width: 100% !important;
+    }
+
+    .grid-stack > .grid-stack-item[data-gs-max-width='9'] {
+        max-width: 100% !important;
+    }
+
+    .menu-grid {
+        left: 15px !important;
+    }
+
+    .main-page h2 {
+        margin-left: 25px !important;
+    }
+
+    .dashboard-search {
+        width: 305px !important;
+        margin: 20px 20px 10px -25px !important;
+    }
+
+  
+
+    .data-area {
+        width: 91% !important;
+    }
+}
+
+
+
+
+/*--------------------------------------------------------------------START 980px-------------------*/
+@media screen and (max-width: 980px) {
+
+
+
+    .photoview img {
+        margin-top: 110px !important;
+        margin-bottom: -90px !important;
+    }
+
+    .container-bottom {
+        padding: 35px !important;
+        padding-left: 90px !important;
+    }
+
+    .photoview {
+        position: relative;
+        top: -102px !important;
+    }
+
+    .menu-nameview {
+        margin-left: 21px !important;
+    }
+
+    .photoview a {
+        top: 130px !important;
+    }
+
+    .centerElementForm {
+        margin: 0px auto;
+        width: 100% !important;
+    }
+
+    .col-name {
+        width: 526px !important;
+    }
+
+    .basicinfo-left {
+        width: 100% !important;
+    }
+
+    .basicinfo-right {
+        width: 100% !important;
+        position: unset !important;
+        padding: 80px 0px 20px 20px !important;
+    }
+
+    .col-infobottom {
+        width: 258px !important;
+    }
+
+    .coltitle-update {
+        width: 535px !important;
+    }
+
+    .dashboard-search {
+        width: 290px !important;
+    }
+
+}
+
+/*--------------------------------------------------------------------START 800px-------------------*/
+@media screen and (max-width: 800px) {
+
+    .first-row {
+        padding: 0px !important;
+        display: block !important;
+    }
+
+    .second-row {
+        display: block !important;
+    }
+
+
+    .basicinfo-right {
+        padding-top: 20px !important;
+    }
+
+    .col-photo {
+        width: 660px !important;
+    }
+
+    .col-name {
+        margin: -5px 20px 20px 20px !important;
+        width: 660px !important;
+    }
+
+    .col-infobottomEdu {
+        width: 660px !important;
+        margin: 8px !important;
+    }
+
+    .col-infobottom {
+        width: 322px !important;
+        margin: 8px !important;
+    }
+
+    .skills-info ul li:last-child {
+        padding-bottom: 15px;
+    }
+
+    .colphoto-update {
+        width: 705px !important;
+    }
+
+    .coltitle-update {
+        margin: 20px 20px 20px 22px !important;
+    }
+
+    .coltitle-update {
+        width: 705px !important;
+    }
+
+    .photoedit-update {
+        margin-top: -55px;
+    }
+
+    .second-line {
+        padding-top: 0px !important;
+        margin-top: -20px;
+    }
+
+    .photoedit-update {
+        padding: 0px 30px 5px 30px !important;
+    }
+
+    .overlay-text-bottom1 {
+        top: 330px !important;
+    }
+
+    .overlay-text-bottom2 {
+        left: 0px !important;
+    }
+
+    .dashboard-search {
+        width: 227px !important;
+    }
+
+    .addbutton {
+        display: none;
+    }
+
+    .addbutton-hidden {
+        display: inline !important;
+    }
+
+    .export {
+        display: none;
+    }
+
+    .export-hidden {
+        display: inline !important;
+    }
+
+    .main-page h3 {
+        margin-left: 20pt !important;
+    }
+
+    #tambahKab_kot h3, #editKab_kot h3, #tambahprovinsi h3, #editProvinsi h3, #tambahGroupakses h3, #editGroupakses h3, #editPengguna h3, #tambahPengguna h3, #tambahSurat h3, #editSurat h3, #deleteUser h3, #editUser h3, #resetPass h3, #tambahMenuakses h3, #editMenuakses h3, #tambahInstansi h3, #editInstansi h3,
+    #detailGroupakses h3, #detailSurat h3 {
+        right: 20px !important;
+    }
+
+
+    .breadcrumb {
+        padding: 0px 0px 30px 27px !important;
+    }
+
+    .data-area {
+        width: 95% !important;
+        margin-left: 25px !important;
+    }
+}
+
+/*--------------------------------------------------------------------START 768px-------------------*/
+@media screen and (max-width: 768px) {
+
+    .photoview {
+        position: relative;
+        top: -102px !important;
+    }
+
+    .menu-nameview {
+        margin-left: 21px !important;
+    }
+
+    .photoview a {
+        top: 130px !important;
+    }
+
+    .container-bottom h4 {
+        padding-top: 0px;
+        margin-top: -10px;
+    }
+
+    .centerElementForm {
+        margin: 0px auto;
+        width: 100% !important;
+    }
+
+    .col-name {
+        width: 645px !important;
+    }
+
+    .col-infobottomEdu {
+        width: 645px !important;
+    }
+
+    .col-infobottom {
+        width: 317px !important;
+    }
+
+    .colphoto-update, .coltitle-update {
+        width: 665px !important;
+    }
+
+    .col-photo {
+        width: 645px !important;
+    }
+
+    .col-infobottom {
+        width: 315px !important;
+    }
+
+    .grid-stack > .grid-stack-item[data-gs-x='6'] {
+        margin-left: 0px !important;
+    }
+
+    .change-view {
+        padding: 5px 15px 5px 15px !important;
+    }
+
+    .inline-modal.open {
+        width: 705px !important;
+    }
+}
+
+
+
+/*--------------------------------------------------------------------START 600px-------------------*/
+@media screen and (max-width: 600px) {
+    .top-navbar ul.pull-right {
+        top: -7px !important;
+    }
+
+
+    .tab-content {
+        padding: 15px 0px 15px 0px !important;
+    }
+
+
+    #updateProfile {
+        margin: 0px !important;
+    }
+
+    .tab-menu {
+        margin-left: -15px !important;
+    }
+
+    .dataTables_filter {
+        display: none !important;
+    }
+
+    .dataTables_wrapper div.dt-buttons {
+        left: 0px;
+        top: 3px !important;
+    }
+
+    .photoview a {
+        position: relative;
+        top: 73px !important;
+    }
+
+    .photoview {
+        position: relative;
+        top: -102px !important;
+    }
+
+    .menu-nameview {
+        margin-left: 21px !important;
+    }
+
+    .nameview h2 {
+        text-align: center;
+    }
+
+    .photoview a {
+        top: 130px !important;
+    }
+
+    .container-bottom h4 {
+        padding-top: 0px;
+        margin-top: -10px;
+    }
+
+    .centerElementForm {
+        margin: 0px auto;
+        width: 100% !important;
+    }
+
+    .col-name {
+        width: 478px !important;
+    }
+
+    .col-infobottomEdu {
+        width: 478px !important;
+    }
+
+    .col-infobottom {
+        width: 478px !important;
+    }
+
+
+    .skills-info ul li {
+        padding-bottom: 20px !important;
+    }
+
+    .works-info ul li {
+        float: left;
+        padding-bottom: 20px !important;
+    }
+
+    .colphoto-update {
+        width: 500px !important;
+    }
+
+    .coltitle-update {
+        width: 500px !important;
+    }
+
+    .title-update {
+        padding: 20px 20px 10px 0px !important;
+    }
+
+    #updateEducation {
+        margin-left: 0px !important;
+    }
+
+    #updateSkills {
+        margin-left: 0px !important;
+    }
+
+    #updateWorks {
+        margin-left: 0px !important;
+    }
+
+    .col-photo {
+        width: 478px !important;
+    }
+
+    .col-name {
+        display: inline-block !important;
+    }
+
+    .second-row {
+        left: 3px !important;
+    }
+
+    .col-infobottom {
+        display: inline-block !important;
+    }
+
+    .second-line {
+        margin-top: 10px !important;
+    }
+
+    .title-inputarea p {
+        margin-bottom: 15px !important;
+    }
+
+    .field-wrap {
+        margin-bottom: 15px !important;
+    }
+
+        .field-wrap ul.pull-right {
+            margin: 0px 10px 30px 0px !important;
+        }
+
+    .dashboard-search {
+        width: 300px !important;
+    }
+
+
+    .data-area {
+        width: 93% !important;
+    }
+
+    .table-dropdown, .table-dropdownview {
+        display: none;
+    }
+
+
+    .table-search {
+        margin-left: -90px !important;
+    }
+
+   
+
+    .searchicon-table {
+        left: 50px !important;
+    }
+
+
+    .table {
+        width: 90% !important;
+    }
+
+    .menuapp ul li.item-menu {
+        padding: 0px 6px 0px 0px !important;
+        width: 135px !important;
+    }
+
+    .last .form-search{
+        left:80px !important;
+    }
+
+     .tabcontent #custom-search-form {
+        left: 100px !important;
+    }
+
+}
+
+
+/*--------------------------------------------------------------------START 360px-------------------*/
+@media screen and (max-width: 360px) {
+    .top-navbar ul.pull-right {
+        top: -64px !important;
+    }
+
+    .brand {
+        display: none;
+    }
+
+    .col-photo {
+        width: 330px !important;
+        margin: 20px 0px 0px 0px !important;
+    }
+
+    .col-name {
+        margin: 20px 0px 0px 0px !important;
+        width: 330px !important;
+    }
+
+    .container-bottom h4 {
+        font-size: 16px;
+    }
+
+    ul.topmenu li.brand a {
+        font-size: 14px !important;
+        left: 70px;
+    }
+
+    ul.topmenu li.brand a {
+        font-size: 14px !important;
+    }
+
+    .menu-nameview h2 {
+        padding-left: 46px !important;
+    }
+
+    .menu-nameview h5 {
+        color: #373c51 !important;
+        padding-left: 43px !important;
+    }
+
+    .questionicon {
+        display: none;
+    }
+
+    .settingicon {
+        display: none;
+    }
+
+    .menu-photoview img {
+        width: 150px !important;
+        height: 150px !important;
+    }
+
+    .hidden-icon {
+        display: inline-block;
+    }
+
+    ul.topmenu li.app {
+        display: none;
+    }
+
+    .hidden-mobile {
+        display: none !important;
+    }
+
+    .hidden-desktop {
+        display: block !important;
+    }
+
+    #mySidenav {
+        width: 0px;
+    }
+
+    .main-page {
+        margin: 0px !important;
+    }
+
+        .main-page h2 {
+            font-size: 24px !important;
+        }
+
+    .tab-chart {
+        position: relative !important;
+    }
+
+        .tab-chart ul li {
+            width: 61pt !important;
+        }
+
+    .topmenu.open .hidden-desktop {
+        background: #212121;
+    }
+
+    .topmenu .hidden-desktop {
+        padding: 14px 17px;
+        position: relative;
+        top: -13px;
+        left: -16px;
+    }
+
+    .top-navbar ul.pull-right li.listBell {
+        position: relative;
+        left: 30px;
+    }
+
+    .tab-menu {
+        padding-left: 50px !important;
+    }
+
+    .group-area {
+        width: 91% !important;
+    }
+
+    .dt-buttons {
+        display: none !important;
+    }
+
+    .photoview a {
+        position: relative;
+        top: 73px !important;
+    }
+
+    .photoview {
+        position: relative;
+        top: -102px !important;
+    }
+
+    .menu-nameview {
+        margin-left: -24px !important;
+    }
+
+    .nameview {
+        margin-top: 0px !important;
+    }
+
+    .container-bottom {
+        padding-left: 40px !important;
+    }
+
+    .photoview a {
+        top: 130px !important;
+    }
+
+    .container-bottom h4 {
+        padding-top: 0px;
+        margin-top: -10px;
+    }
+
+    .centerElementForm {
+        margin: 0px auto;
+        width: 100% !important;
+    }
+
+    .basicinfo ul li {
+        padding-right: 10px;
+    }
+
+    .col-name {
+        width: 330px !important;
+    }
+
+    .col-infobottomEdu {
+        width: 330px !important;
+    }
+
+    .col-infobottom {
+        width: 330px !important;
+    }
+
+    .colphoto-update {
+        width: 340px !important;
+        margin: 20px 0px 0px 5px !important;
+    }
+
+    .coltitle-update {
+        width: 340px !important;
+        margin: 20px 0px 0px 5px !important;
+    }
+
+    .second-row {
+        left: -13px !important;
+        margin-top: 20px !important;
+    }
+
+    .field-wrap ul.pull-right li a {
+        padding: 7px 35px 7px 35px !important;
+    }
+
+    .dashboard-search {
+        width: 310px !important;
+    }
+
+    .data-area {
+        width: 90% !important;
+    }
+
+    .table {
+        width: 90% !important;
+        margin-left: 20px !important;
+    }
+
+    .table-dropdown, .table-dropdownview {
+        display: none;
+    }
+
+    .table-search {
+        margin-left: -100px !important;
+    }
+
+    .export-hidden {
+        left: 40px !important;
+    }
+
+    .addbutton-hidden {
+        margin-left: -10px !important;
+    }
+
+
+    #li-table-vw {
+        display: none !important;
+    }
+
+    .searchicon-table {
+        left: 43px !important;
+    }
+
+  
+    .data-area {
+        margin-left: 15px !important;
+    }
+  .last .form-search{
+     display:none;
+    }
+    
+}
+
+

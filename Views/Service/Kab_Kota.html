@@ -1,0 +1,262 @@
+﻿<h3>Master data</h3>
+<ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#!/Views/Home/Welcome.html">Home</a></li>
+    <li class="breadcrumb-item">Pengaturan</li>
+    <li class="breadcrumb-item">Kabupaten/Kota</li>
+</ol>
+
+
+<div class="data-area col-sm-12">
+    <ul class="option-toptable">
+        <li>
+            <div class="addoption">
+                <a class="addbutton" onclick="openModal(this, '#tambahKab_kot')"><i class="ms-icon-plus2"></i></a>
+                <span class="tooltiptext">Tambah kab/kota</span>
+            </div>
+        </li>
+        <li>
+            <div class="editoption">
+                <a class="addbutton" onclick="openModal(this, '#editKab_kot')"><i class="ms-icon-pencil"></i></a>
+                <span class="tooltiptext">Edit kab/kota</span>
+            </div>
+        </li>
+        <li>
+            <div class="deleteoption">
+                <a class="delbutton" onclick=""><i class="ms-icon-trash"></i></a>
+                <span class="tooltiptext">Hapus kab/kota</span>
+            </div>
+        </li>
+        <li class="last">
+            <form id="custom-search-form" class="form-search form-horizontal">
+                <div class="input-group stylish-input-group">
+                    <input type="text" class="table-search" placeholder="Search" id="myInput" onkeyup="myFunction()"><span class="searchicon-table"><i class="ms-icon-search2"></i></span>
+                </div>
+            </form>
+        </li>
+
+        <li class="pull-right">
+            <div class="refresh">
+                <button type="button" class="btn custom-btn" data-toggle="tooltip" data-placement="left" title="refresh"><i class="ms-icon-refresh2"></i></button>
+            </div>
+        </li>
+    </ul>
+
+    <!--------------------------------------------------------------------------------------------- LIST provinsi-->
+
+
+    <div class="row other-chart">
+        <div class="table">
+            <table id="Table_Menuakses" class="display responsive tableCheckbox" style="width:100%;">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>ID Provinsi</th>
+                        <th>Name</th>
+
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="checkbox" class="select-item" name="select_item" value="1" /></td>
+                        <td>J01</td>
+                        <td>Bogor</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" class="select-item" name="select_item" value="1" /></td>
+                        <td>J02</td>
+                        <td>Depok</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" class="select-item" name="select_item" value="1" /></td>
+                        <td>J03</td>
+                        <td>Bekasi</td>
+                    </tr>
+                   
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<!---------------------------------------------------------------------------------------------OPENMODAL TAMBAH KAB/KOT-->
+<!----------------------------------------------------------------------------------------------->
+
+<div id="tambahKab_kot" class="inline-modal">
+
+    <h3>Tambah Kabupaten/Kota<a href="javascript:void(0)" class="pull-right inline-modal-exit" onclick="closeApp(this)">&times;</a></h3>
+
+
+    <div class="col-sm-12 viewmodal">
+
+        <!-----------------------------------ID PROVINSI -------------------------------------->
+
+        <div class="groupform-left2 col-sm-12">
+            <p>ID Provinsi</p>
+            <div class="inputarea">
+                <div class="field-wrap">
+                    <div class="form-group">
+                        <select class="form-control">
+                            <option>Pilih ID Provinsi</option>
+                            <option>J01</option>
+                            <option>J02</option>
+                            <option>J03</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <!-----------------------------------Nama -------------------------------------->
+
+        <div class="groupform-left col-sm-12">
+            <p>Name</p>
+            <div class="inputarea">
+                <div class="field-wrap">
+                    <input type="text" required autocomplete="off" placeholder="" />
+                </div>
+            </div>
+        </div>
+
+
+        <div class="groupform-left col-sm-12">
+            <div class="field-wrap">
+                <ul class="submitnew-unit">
+                    <li><a class="submit">Simpan</a></li>
+                    <li><a class="cancel" data-dismiss="">Batal</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!---------------------------------------------------------------------------------------------OPENMODAL EDIT provinsi-->
+<!----------------------------------------------------------------------------------------------->
+
+<div id="editKab_kot" class="inline-modal">
+
+    <h3>Edit Kabupaten/Kota<a href="javascript:void(0)" class="pull-right inline-modal-exit" onclick="closeApp(this)">&times;</a></h3>
+
+
+    <div class="col-sm-12 viewmodal">
+
+
+        <!-----------------------------------ID PROVINSI -------------------------------------->
+
+        <div class="groupform-left2 col-sm-12">
+            <p>ID Provinsi</p>
+            <div class="inputarea">
+                <div class="field-wrap">
+                    <div class="form-group">
+                        <select class="form-control">
+                            <option>Pilih ID Provinsi</option>
+                            <option>J01</option>
+                            <option>J02</option>
+                            <option>J03</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-----------------------------------Nama -------------------------------------->
+
+        <div class="groupform-left col-sm-12">
+            <p>Name</p>
+            <div class="inputarea">
+                <div class="field-wrap">
+                    <input type="text" required autocomplete="off" placeholder="" />
+                </div>
+            </div>
+        </div>
+
+
+        <div class="groupform-left col-sm-12">
+            <div class="field-wrap">
+                <ul class="submitnew-unit">
+                    <li><a class="submit">Simpan</a></li>
+                    <li><a class="cancel" data-dismiss="">Batal</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<script>
+    $("#Table_Menuakses").DataTable({
+        dom: 'Bfrtip',
+        responsive: true,
+        colReorder: true,
+        language: { search: "" },
+        columnDefs: [{
+            targets: [0],
+            orderData: [0, 1]
+        }, {
+            targets: [1],
+            orderData: [1, 0]
+        },
+        {
+            'targets': 0,
+            'searchable': false,
+            'orderable': false,
+            'className': 'dt-body-center'
+
+        }
+        ],
+        order: [[1, 'asc']],
+        buttons: [{
+            extend: 'collection',
+            text: 'Export',
+            buttons: [
+                'copy',
+                'excel',
+                'csv',
+                'pdf',
+                'print'
+            ]
+        }]
+    });
+
+
+
+    $("#select-all2").click(function () {
+        $('.select-item').attr('checked', this.checked);
+    });
+
+
+    $(".select-item").click(function () {
+
+        if ($(".select-item").length == $(".select-item:checked").length) {
+            $("#select-all2").attr("checked", "checked");
+        } else {
+            $("#select-all2").removeAttr("checked");
+        }
+
+    });
+
+
+    function myFunction() {
+        // Declare variables
+        var input, filter, table, tr, td, i;
+        input = document.getElementById("myInput");
+        filter = input.value.toUpperCase();
+        table = document.getElementById("userTable");
+        tr = table.getElementsByTagName("tr");
+
+        // Loop through all table rows, and hide those who don't match the search query
+        for (i = 0; i < tr.length; i++) {
+            td = tr[i].getElementsByTagName("td")[1];
+            if (td) {
+                if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                    tr[i].style.display = "";
+                } else {
+                    tr[i].style.display = "none";
+                }
+            }
+        }
+    }
+</script>
+

@@ -1,0 +1,287 @@
+﻿<h3>Master data</h3>
+<ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#!/Views/Home/Welcome.html">Home</a></li>
+    <li class="breadcrumb-item">Pengaturan</li>
+    <li class="breadcrumb-item">Group akses</li>
+</ol>
+
+<div class="data-area col-sm-12">
+    <ul class="option-toptable">
+        <li>
+            <div class="addoption">
+                <a class="addbutton" onclick="openModal(this, '#tambahGroupakses')"><i class="ms-icon-plus2"></i></a>
+                <span class="tooltiptext">Tambah group akses</span>
+            </div>
+        </li>
+        <li class="last">
+            <form id="custom-search-form" class="form-search form-horizontal">
+                <div class="input-group stylish-input-group">
+                    <input type="text" class="table-search" placeholder="Search" id="myInput" onkeyup="myFunction()"><span class="searchicon-table"><i class="ms-icon-search2"></i></span>
+                </div>
+            </form>
+        </li>
+        <li class="pull-right">
+            <div class="refresh">
+                <button type="button" class="btn custom-btn" data-toggle="tooltip" data-placement="left" title="refresh"><i class="ms-icon-refresh2"></i></button>
+            </div>
+        </li>
+    </ul>
+
+
+    <!--------------------------------------------------------------------------------------------- LIST PENGGUNA-->
+
+    <div class="row other-chart">
+        <div class="table">
+            <table id="table_groupakses" class="display responsive tableCheckbox" style="width:100%;">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Group Akses</th>
+                        <th>Deskripsi</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="hover-pns">
+                        <td></td>
+                        <td><a onclick="openModal(this, '#detailGroupakses')">Administrator</a></td>
+                        <td>Deskripsi 1</td>
+                        <td class="action">
+                            <a onclick="openModal(this, '#editGroupakses')"><i class="ms-icon-pencil"></i></a>
+                            <a href=""><i class="ms-icon-trash"></i></a>
+                            <a href=""><i class="ms-icon-ellipsis"></i></a>
+                        </td>
+                    </tr>
+                    <tr class="hover-pns">
+                        <td></td>
+                        <td><a onclick="openModal(this, '#detailGroupakses')">Pengguna</a></td>
+                        <td>Deskripsi 2</td>
+                        <td class="action">
+                            <a onclick="openModal(this, '#editGroupakses')"><i class="ms-icon-pencil"></i></a>
+                            <a href=""><i class="ms-icon-trash"></i></a>
+                            <a href=""><i class="ms-icon-ellipsis"></i></a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="pagination">
+            <a href="#"><i class="ms-icon-chevronLeft"></i></a>
+            <a href="#" class="active">1</a>
+            <a href="#">2</a>
+            <a href="#"><i class="ms-icon-chevronRight"></i></a>
+        </div>
+    </div>
+</div>
+<!---------------------------------------------------------------------------------------------OPENMODAL TAMBAH GRUP AKSES-->
+<!----------------------------------------------------------------------------------------------->
+<div id="tambahGroupakses" class="inline-modal">
+    <h3>Tambah menu akses<a href="javascript:void(0)" class="pull-right inline-modal-exit" onclick="closeApp(this)">&times;</a></h3>
+
+    <form class="inputdata">
+        <div class="form-group">
+            <label>Name</label>
+            <input type="text" class="form-control" placeholder="">
+        </div>
+        <!-- ------- -->
+      
+        <div class="form-group">
+            <label>Deskripsi</label>
+            <input type="text" class="form-control" placeholder="">
+        </div>
+        <!-- ------- -->
+        <button type="submit" class="btn btn-primary">Simpan</button>
+        <!-- ------- -->
+    </form>
+</div>
+<!---------------------------------------------------------------------------------------------OPENMODAL EDIT GRUP AKSES-->
+<!----------------------------------------------------------------------------------------------->
+<div id="editGroupakses" class="inline-modal">
+    <h3>Edit group akses<a href="javascript:void(0)" class="pull-right inline-modal-exit" onclick="closeApp(this)">&times;</a></h3>
+
+    <form class="inputdata">
+        <div class="form-group">
+            <label>Name</label>
+            <input type="text" class="form-control" placeholder="">
+        </div>
+        <!-- ------- -->
+      
+        <div class="form-group">
+            <label>Deskripsi</label>
+            <input type="text" class="form-control" placeholder="">
+        </div>
+        <!-- ------- -->
+        <button type="submit" class="btn btn-primary">Simpan</button>
+        <!-- ------- -->
+    </form>
+</div>
+
+
+
+<!---------------------------------------------------------------------------------------------OPENMODAL DETAILS GROUP AKSES-->
+<!----------------------------------------------------------------------------------------------->
+<div id="detailGroupakses" class="inline-modal">
+    <h3>Group akses Administrator <a href="javascript:void(0)" class="pull-right inline-modal-exit" onclick="closeApp(this)">&times;</a></h3>
+
+    <div class="col-sm-12 viewmodal">
+        <div class="tab">
+            <button class="tablinks active" onclick="openCity(event, 'Akses')">Akses</button>
+            <button class="tablinks" onclick="openCity(event, 'Manage')">Manage</button>
+            <button class="tablinks" onclick="openCity(event, 'Anggota')">Anggota</button>
+        </div>
+        <div id="Akses" class="tabcontent" style="display:block;">
+            <ol class="tab-ol">
+                <li class="tab-li">
+                    Beranda
+                </li>
+                <li class="tab-li">
+                    Profil PNS
+                </li>
+                <li class="tab-li">
+                   Mutasi Pegawai
+                </li>
+            </ol>
+        </div>
+        <div id="Manage" class="tabcontent">
+            <div class="checkbox">
+                <label><input type="checkbox" value="">Beranda</label>
+            </div>
+            <div class="checkbox">
+                <label><input type="checkbox" value="">Profil PNS</label>
+            </div>
+            <div class="checkbox">
+                <label><input type="checkbox" value="">Mutasi Pegawai</label>
+            </div>
+        </div>
+        <div id="Anggota" class="tabcontent">
+            <form id="custom-search-form" class="form-search form-horizontal">
+                <div class="input-group stylish-input-group">
+                    <input type="text" class="table-search" placeholder="Search" id="myInput" onkeyup="myFunction()"><span class="searchicon-table"><i class="ms-icon-search2"></i></span>
+                </div>
+                <div class="table anggotaGroup">
+                    <table id="table_anggotagroupakses" class="display responsive tableCheckbox" style="width:100%;">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>No.</th>
+                                <th>List anggota group akses</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="hover-pns">
+                                <td></td>
+                                <td>1.</td>
+                                <td><a href="#!/Views/Profilpns/Detail.html">Dewa</a></td>
+                            </tr>
+                            <tr class="hover-pns">
+                                <td></td>
+                                <td>2.</td>
+                                <td><a href="#!/Views/Profilpns/Detail.html">Rusdi</a></td>
+                            </tr>
+                            <tr class="hover-pns">
+                                <td></td>
+                                <td>3.</td>
+                                <td><a href="#!/Views/Profilpns/Detail.html">Faizin</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="pagination anggotaGroup">
+                    <a href="#"><i class="ms-icon-chevronLeft"></i></a>
+                    <a href="#" class="active">1</a>
+                    <a href="#">2</a>
+                    <a href="#"><i class="ms-icon-chevronRight"></i></a>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+    $("tr.hover-pns").hover(function () {
+        $(".action i").css("visibility", "visible");
+    },function(){
+        $(".action i").css("visibility", "hidden");
+    });
+</script>
+<script>
+    $("#Table_Groupakses").DataTable({
+        dom: 'Bfrtip',
+        responsive: true,
+        colReorder: true,
+        language: { search: "" },
+        columnDefs: [{
+            targets: [0],
+            orderData: [0, 1]
+        }, {
+            targets: [1],
+            orderData: [1, 0]
+        }
+        ],
+        order: [[1, 'asc']],
+        buttons: [{
+            extend: 'collection',
+            text: 'Export',
+            buttons: [
+                'copy',
+                'excel',
+                'csv',
+                'pdf',
+                'print'
+            ]
+        }]
+    });
+
+    function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+
+
+    $("#select-all2").click(function () {
+        $('.select-item').attr('checked', this.checked);
+    });
+
+
+    $(".select-item").click(function () {
+
+        if ($(".select-item").length == $(".select-item:checked").length) {
+            $("#select-all2").attr("checked", "checked");
+        } else {
+            $("#select-all2").removeAttr("checked");
+        }
+
+    });
+
+
+    function myFunction() {
+        // Declare variables
+        var input, filter, table, tr, td, i;
+        input = document.getElementById("myInput");
+        filter = input.value.toUpperCase();
+        table = document.getElementById("userTable");
+        tr = table.getElementsByTagName("tr");
+
+        // Loop through all table rows, and hide those who don't match the search query
+        for (i = 0; i < tr.length; i++) {
+            td = tr[i].getElementsByTagName("td")[1];
+            if (td) {
+                if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                    tr[i].style.display = "";
+                } else {
+                    tr[i].style.display = "none";
+                }
+            }
+        }
+    }
+</script>

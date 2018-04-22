@@ -1,0 +1,102 @@
+﻿<section class="contact">
+    <div class="container mycontainer">
+        <div class="innerLiner">
+            <div class="box">
+                <div class="col-md-6">
+                    <h1>Contact</h1>
+                    <p>Lorem ipsum dolor sit amet, affert homero percipit sea ut, dicunt maiorum honestatis eu vis. <br />Vis detraxit urbanitas ut. Nobis option utroque vis ex, no his doctus eleifend.<br /> Has nemore fabulas ut. Option iuvaret pertinax ad est, pri dicta rationibus dissentiet ut.</p>
+                    <div class="col-md-6 contactbottom">
+                        <h2>Kontak</h2>
+                        <p>Telepon: 021 9982012</p>
+                        <p>Email: hubungi@mugi.id</p>
+                    </div>
+                    <div class="col-md-6 contactbottom">
+                        <h2>Alamat</h2>
+                        <p>JL. Condet raya No. 13</p>
+                        <p>Pasar rebo, Jakarta</p>
+                    </div>
+                    <input class="nextBtn" type="button" value="Send message">
+                </div>
+                <div class="col-md-6"></div>
+            </div>
+            <div class="box">
+                <div class="col-md-6">
+                    <h1>Email kami</h1>
+                    <p>Lorem ipsum dolor sit amet, affert homero percipit sea ut, dicunt maiorum honestatis eu vis.<br /> Vis detraxit urbanitas ut. Nobis option utroque vis ex, no his doctus eleifend. <br />Has nemore fabulas ut. Option iuvaret pertinax ad est, pri dicta rationibus dissentiet ut.</p>
+                    <input class="backBtn" type="button" value="Information">
+                </div>
+                <div class="col-md-6">
+                    <form>
+                        <div class="form-group">
+                            <label>Name</label>
+                            <input type="email" class="form-control" placeholder="">
+                        </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" class="form-control" placeholder="your@email.address">
+                        </div>
+                        <div class="form-group">
+                            <label>Message</label>
+                            <textarea class="form-control" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-default">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="footer">
+    <div class="container">
+        <div class="col-md-6 footer-right">
+            <h3>MIcrosoft User Group Indonesia</h3>
+            <p>Berbagi dan Berkembang Bersama Komunitas</p>
+            <h1>Subscribe</h1>
+            <form class="contactus">
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" class="form-control" placeholder="your@email.address">
+                </div>
+                <button type="submit" class="btn btn-default">Subscribe</button>
+            </form>
+        </div>
+        <div class="col-md-6 footer-left">
+            <p>Lorem ipsum dolor sit amet, affert homero percipit sea ut, dicunt maiorum honestatis eu vis. Vis detraxit urbanitas ut. Nobis option utroque vis ex, no his doctus eleifend. Has nemore fabulas ut. Option iuvaret pertinax ad est, pri dicta rationibus dissentiet ut.</p>
+            <div class="row">
+                <div class="col-md-6 sitemap">
+                    <p>Sitemap</p>
+                    <a href="">Tentang kami</a>
+                    <a href="">Program Kerja</a>
+                    <a href="">Dokumen</a>
+                    <a href="">Galeri</a>
+                </div>
+                <div class="col-md-6 social-media">
+                    <p>Social media</p>
+                    <a href=""><i class="fa fa-facebook-square"></i></a>
+                    <a href=""><i class="fa fa-twitter"></i></a>
+                    <a href=""><i class="fa fa-google-plus"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    function goRight() { // inner stuff slides left
+        var initalLeftMargin = $(".innerLiner").css('margin-left').replace("px", "") * 1;
+        var newLeftMargin = (initalLeftMargin - 1200); // extra 2 for border
+        $(".innerLiner").animate({ marginLeft: newLeftMargin }, 500);
+    }
+    function goLeft() { // inner stuff slides right
+        var initalLeftMargin = $(".innerLiner").css('margin-left').replace("px", "") * 1;
+        var newLeftMargin = (initalLeftMargin + 1200); // extra 2 for border
+        $(".innerLiner").animate({ marginLeft: newLeftMargin }, 500);
+    }
+
+    $(".nextBtn").click(function (e) {
+        goRight();
+    });
+    $(".backBtn").click(function (e) {
+        goLeft();
+    });
+</script>

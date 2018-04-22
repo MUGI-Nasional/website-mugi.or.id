@@ -1,0 +1,147 @@
+﻿<h3>Transfer data</h3>
+<ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#!/Views/Home/Welcome.html">Home</a></li>
+    <li class="breadcrumb-item">Transfer data</li>
+</ol>
+
+<div class="data-area col-sm-12">
+    <ul class="option-toptable">
+        <li>
+            <div class="addoption">
+                <a class="addbutton" href="#!/Views/Kenaikanpangkat/addPangkat.html"><i class="ms-icon-upload"></i></a>
+                <span class="tooltiptext">Transfer data</span>
+            </div>
+        </li>
+        <li class="last">
+            <form id="custom-search-form" class="form-search form-horizontal">
+                <div class="input-group stylish-input-group">
+                    <input type="text" class="table-search" placeholder="Search" id="myInput" onkeyup="myFunction()"><span class="searchicon-table"><i class="ms-icon-search2"></i></span>
+                </div>
+            </form>
+        </li>
+        <li class="pull-right">
+            <div class="refresh">
+                <button type="button" class="btn custom-btn" data-toggle="tooltip" data-placement="left" title="refresh"><i class="ms-icon-refresh2"></i></button>
+            </div>
+        </li>
+    </ul>
+    <!--------------------------------------------------------------------------------------------- LIST PENGGUNA-->
+
+    <div class="row other-chart">
+        <div class="table">
+            <table id="Table_daftarpns" class="display responsive tableCheckbox" style="width:100%;">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>File transfer</th>
+                        <th>Tanggal transfer</th>
+                        <th>Oleh</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="hover-pns">
+                        <td></td>
+                        <td><a href="#">Transfer Data 1</a></td>
+                        <td><a href="#">12-01-2018</a></td>
+                        <td><a href="#">Administrator</a></td>
+                        <td><a class="Approve">Berhasil</a></td>
+                        
+                    </tr>
+                    <tr class="hover-pns">
+                        <td></td>
+                        <td><a href="#">Transfer Data 1</a></td>
+                        <td><a href="#">12-01-2018</a></td>
+                        <td><a href="#">Administrator</a></td>
+                        <td><a class="Approve">Berhasil</a></td>
+
+                    </tr>
+                    <tr class="hover-pns">
+                        <td></td>
+                        <td><a href="#">Transfer Data 1</a></td>
+                        <td><a href="#">12-01-2018</a></td>
+                        <td><a href="#">Administrator</a></td>
+                        <td><a class="Approve">Berhasil</a></td>
+
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="pagination">
+            <a href="#"><i class="ms-icon-chevronLeft"></i></a>
+            <a href="#" class="active">1</a>
+            <a href="#">2</a>
+            <a href="#"><i class="ms-icon-chevronRight"></i></a>
+        </div>
+    </div>
+</div>
+
+<!---------------------------------------------------------------------------------------------OPENMODAL TAMBAH-->
+<!----------------------------------------------------------------------------------------------->
+<div id="tambahMutasi" class="inline-modal">
+    <h3>Tambah Mutasi<a href="javascript:void(0)" class="pull-right inline-modal-exit" onclick="closeApp(this)">&times;</a></h3>
+    <form class="inputdata">
+        <div class="form-group">
+            <label>NIP</label>
+            <input type="text" class="form-control" placeholder="">
+        </div>
+        <!-- ------- -->
+        <div class="form-group">
+            <label>Nama</label>
+            <input type="text" class="form-control" placeholder="">
+        </div>
+        <!-- ------- -->
+        <div class="form-group">
+            <label>Nilai Akhir Administrasi</label>
+            <input type="number" class="form-control" placeholder="">
+        </div>
+        <!-- ------- -->
+        <div class="form-group">
+            <label>Nilai Tes Bahasa Inggris</label>
+            <input type="number" class="form-control" placeholder="">
+        </div>
+        <!-- ------- -->
+        <div class="form-group">
+            <label>Nilai Penulisan Makalah </label>
+            <input type="number" class="form-control" placeholder="">
+        </div>
+        <!-- ------- -->
+        <div class="form-group">
+            <label>Nilai Akhir Kompetensi Kepegawaian</label>
+            <input type="number" class="form-control" placeholder="">
+        </div>
+        <!-- ------- -->
+        <div class="form-group">
+            <label>Nilai Uji Kompetensi dan Potensi</label>
+            <input type="number" class="form-control" placeholder="">
+        </div>
+        <!-- ------- -->
+        <div class="form-group">
+            <label>Nilai Akhir Presentasi dan Wawancara</label>
+            <input type="number" class="form-control" placeholder="">
+        </div>
+        <!-- ------- -->
+        <div class="form-group">
+            <label>Rekomendasi Assessment</label>
+            <select class="form-control">
+                <option selected>Pilih Rekomendasi</option>
+                <option>Memenuhi syarat</option>
+                <option>Masih memenuhi syarat </option>
+                <option>Hampir memenuhi syarat</option>
+                <option>Tidak memenuhi syarat</option>
+            </select>
+        </div>
+        <!-- ------- -->
+
+        <button type="submit" class="btn btn-primary">Simpan</button>
+        <!-- ------- -->
+    </form>
+</div>
+
+<script>
+    $("tr.hover-pns").hover(function () {
+        $(".action i").css("visibility", "visible");
+    },function(){
+        $(".action i").css("visibility", "hidden");
+    });
+</script>

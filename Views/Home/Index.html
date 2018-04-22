@@ -1,0 +1,15 @@
+﻿<script type="text/javascript">
+    if (!window.location.hash) {
+        $.ajax({
+            beforeSend: function () {
+                loading();
+            },
+            type: "GET",
+            url: "/Views/Home/Welcome",
+            success: function (rs) {
+                $('#main').html(rs);
+                close_box();
+            }
+        });
+    }
+</script>
