@@ -1,5 +1,6 @@
 ﻿<!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,13 +20,14 @@
     <link rel="stylesheet" href="/Content/css/style.css" type="text/css" media="all" />
 
 </head>
+
 <body class="index">
-  <script src='https://s3.amazonaws.com/instabug-pro/sdk_releases/instabugsdk-1.2.1-beta.min.js'></script>
-  <script>
-  ibgSdk.init({
-    token: '7e4ec7b69921ada75e2e95b0a8e859b2'
-  });
-</script>
+    <script src='https://s3.amazonaws.com/instabug-pro/sdk_releases/instabugsdk-1.2.1-beta.min.js'></script>
+    <script>
+        ibgSdk.init({
+            token: '7e4ec7b69921ada75e2e95b0a8e859b2'
+        });
+    </script>
     <!--Header-->
     <section class="navbar">
         <div class="top-navbar">
@@ -53,13 +55,15 @@
                 <div class="left-nav scroll-view" id="mySidenav">
                     <div class="sidebar-nav">
                         <ul class="metismenu exit" id="menu">
-                            <li class="hidden-mobile"><a href="#" class="collapse-menu app-arrow" onclick="openNav(this)"></a></li>
+                            <li class="hidden-mobile">
+                                <a href="#" class="collapse-menu app-arrow" onclick="openNav(this)"></a>
+                            </li>
                             <li><a ajax="true" ajax-target="#main" url-push="true" href="#!/Views/Home/Welcome.html"><span class="nav-text">Home</span></a></li>
                             <li><a ajax="true" ajax-target="#main" url-push="true" href="#!/Views/About/About.html"><span class="nav-text">Tentang kami</span></a></li>
                             <li><a ajax="true" ajax-target="#main" url-push="true" href="#!/Views/404/404.html"><span class="nav-text">Program kerja</span></a></li>
                             <li><a ajax="true" ajax-target="#main" url-push="true" href="#!/Views/404/404.html"><span class="nav-text">Kerja sama</span></a></li>
-                            <li><a ajax="true" ajax-target="#main" url-push="true" href="#!/Views/404/404.html"><span class="nav-text">Media</span></a></li>
-                         <!--   <li><a ajax="true" ajax-target="#main" url-push="true" href="#!/Views/404/404.html"><span class="nav-text">Acara</span></a></li> -->
+                            <!--   <li><a ajax="true" ajax-target="#main" url-push="true" href="#!/Views/404/404.html"><span class="nav-text">Media</span></a></li>
+                           <li><a ajax="true" ajax-target="#main" url-push="true" href="#!/Views/404/404.html"><span class="nav-text">Acara</span></a></li> -->
                             <li><a ajax="true" ajax-target="#main" url-push="true" href="#!/Views/Contact/Contact.html"><span class="nav-text">Hubungi kami</span></a></li>
                         </ul>
                         <h4 class="side-logo">Microsoft User Group <b>Indonesia</b></h4>
@@ -90,4 +94,5 @@
     <script src="/Content/js/gridstack.js"></script>
     <script src="/Content/js/gridstack.jQueryUI.js"></script>
 </body>
+
 </html>
